@@ -1,12 +1,12 @@
 import "../../styles/globals.css";
 import { Inter } from "next/font/google";
+import GlassPane from "@/components/GlassPane";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin-ext"],
 });
 
-import GlassPane from "@/components/GlassPane";
 
 export default function AuthRootLayout({children}) {
   return (
