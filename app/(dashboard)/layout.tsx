@@ -27,6 +27,7 @@ export default function DashboardRootLayout({children}) {
             </Card>  
             {children}
         </GlassPane>
+        <div id="modal"></div>
       </body>
     </html>
   )

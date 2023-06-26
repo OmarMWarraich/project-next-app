@@ -44,4 +44,4 @@ export const createNewProject = async (project) => {
         body: {project},
         json: true,
     });
-}
+};
