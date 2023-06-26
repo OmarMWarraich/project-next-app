@@ -7,6 +7,7 @@ import { Suspense } from "react";
 import Greetings from "@/components/Greetings";
 import GreetingsSkeleton from "@/components/GreetingsSkeleton";
 import ProjectCard from "@/components/ProjectCard";
+import TaskCard from "@/components/TaskCard";
 
 const getData = async () => {
   await delay(2000);
@@ -25,6 +26,7 @@ const getData = async () => {
 
 export default async function Page() {
   const { projects } = await getData();
+  
   return (
     <div className="h-full overflow-y-auto pr-6 w-full">
       <div className=" h-full  items-stretch justify-center min-h-[content]">
@@ -47,7 +49,9 @@ export default async function Page() {
           <div className="w-1/3 p-3">{/* new project here */}</div>
         </div>
         <div className="mt-6 flex-2 grow w-full flex">
-          <div className="w-full">{/* tasks here */}</div>
+          <div className="w-full">
+            <TaskCard/>  
+          </div>
         </div>
       </div>
     </div>
