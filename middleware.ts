@@ -18,7 +18,7 @@ const verifyJWT = async(jwt) => {
         pathname.startsWith("/static") ||
         pathname.startsWith("/api") ||
         pathname.startsWith("/signin") ||
-        pathname.startsWith("register") ||
+        pathname.startsWith("/register") ||
         PUBLIC_FILE.test(pathname)
     ) {
         return NextResponse.next();
