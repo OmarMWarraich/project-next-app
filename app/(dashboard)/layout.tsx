@@ -16,9 +16,9 @@ export default function DashboardRootLayout({children}) {
   return (
     <html lang="en" className={inter.variable}>
       <head />
-      <body className="h-screen w-screen rainbow-mesh p-6">
+      <body className="h-screen w-screen candy-mesh p-6">
         <GlassPane
-          className="w-full h-full flex items-center justify-center">
+          className="w-full h-full flex items-center">
             {/* <Sidebar /> */}
             <Card className="h-full w-40 flex items-center justify-between flex-wrap">
               {links.map((link) => (
