@@ -1,7 +1,7 @@
 import Card from "./Card";
 import SidebarLink from "./SidebarLink";
 
-const links = [
+export const links = [
     {
         label: "Home",
         icon: "Grid",
@@ -24,12 +24,14 @@ const links = [
     },
 ];
 
-const Sidebar = () => {
-    <Card className="h-full w-40 flex items-center justify-between flex-wrap">
-        {links.map((link) => (
-            <SidebarLink key={link.label} link={link} />
-        ))}
-    </Card>
-};
+// const Sidebar = () => {
+//     return (
+//         <Card className="h-full w-40 flex items-center justify-between flex-wrap">
+//             {links.map((link) => (
+//                 <SidebarLink key={link.label} link={link} />
+//             ))}
+//         </Card>
+//     )
+// };
 
-export default Sidebar;
+// export default Sidebar;
