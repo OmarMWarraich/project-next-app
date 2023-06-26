@@ -37,7 +37,7 @@ export const verifyJWT = async (token) => {
 export const getUserIdFromCookies = async (cookies) => {
     const jwt = cookies.get(process.env.COOKIE_NAME);
 
-    const { id } = await validateJWT(jwt.value);
+    const { id } = await verifyJWT(jwt.value);
 
     const user = await db.user.findUnique({
         where: {
